@@ -57,13 +57,18 @@ class Intelligence implements IntelligenceInterface {
     
     /**
      * Handles the last input
+     * @TODO develop the communication feature to remember old inputs. 
+     * 
      */
     protected function think() {
         $input = end($this->inputs);
         if($feature = $this->parser->determineFeature($input)) {
            $this->outputs[] = $feature->run();
         } else {
-            $this->outputs[] = "Sorry, I don't understand";
+            // fallback to communication feature. 
+            $feature = new \Pam\Features\Communication\Communication($input);
+            // I really should have thought this thorough in the beginning. 
+            $this->outputs[] = $feature->run();
         }
     }
     
@@ -72,7 +77,7 @@ class Intelligence implements IntelligenceInterface {
      * @return string
      */
     public function respond() {
-        $this->think();
+        $this->think(); // gotta think before saying anything. 
         return end($this->outputs);
     }
     

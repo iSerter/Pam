@@ -56,8 +56,8 @@ class Parser {
                     return new $class($input);
                 }
             }
-        }
-        
+        } 
+                
         return false;
     }
     

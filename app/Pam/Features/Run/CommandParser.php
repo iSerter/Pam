@@ -3,6 +3,8 @@
 
 class CommandParser {
 
+    private $commands = ['' => ''];
+    
     public function parse($input) {
 
     }

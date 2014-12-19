@@ -1,15 +1,19 @@
 PAM
 =========
 
-PAM (Personal Assistant Mockery) is a Siri-like software. I created her to be a dummy project for my learning practices. 
-It really isn't useful at all. It's just a code playground for me.
+PAM (Personal Assistant Mockery) is a Siri-like software with a command line interface. I created her to be a dummy project for my learning practices. 
+
+This isn't a project to have any future or usability whatsoever. It's just a dummy project to showcase my personal knowledge and support my resume. 
 
 
 History
 ----
 
-I needed a dummy project to practice unit testing in PHP, and I realized how often I need such dummy projects. I decided to collect all my learning practices in one big project that I can showcase on Github. Yes, despite the number of projects I have built, none was worth publishing. 
-I wanted to build something that is open to extending its functionality to utterly useless points. Well, what's better than a human at it? So I decided to fake one :) 
+I needed a dummy project to practice unit testing in PHP, and I realized how often I need such dummy projects. 
+Also, I've been wanting to showcase my skills on Github, but all my projects have been private and I don't have any time to develop anything real for the community. 
+I experiment new things and expand my knowledge with the little free time I get, but these dummy projects are usually too simple to showcase.
+Therefore, I decided to collect all my learning practices in one big project that I can put on Github to showcase my skills. 
+So, I created Pam: a silly playground for learning new programming concepts. 
 
 
 Etymology
