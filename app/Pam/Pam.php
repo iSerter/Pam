@@ -11,7 +11,7 @@ use Pam\Intelligence\Intelligence;
 class Pam extends Intelligence {
     
     private $name = 'Pam';
-    
+
     public function sayHello() {
         return "Hello! I'm {$this->name}, and you?";
     }

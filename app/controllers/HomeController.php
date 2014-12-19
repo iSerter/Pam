@@ -19,6 +19,12 @@ class HomeController extends BaseController {
 
 	public function welcome()
 	{
+            $curl = new Curl('http://ilyasserter.com');
+            $source = $curl->get();
+            
+            echo '<textarea>' . $source . '</textarea>';
+            exit; 
+            
             $pam = new Pam();
             echo $pam->sayHello(); 
             echo PHP_EOL . ' <hr />' . PHP_EOL;
@@ -28,13 +34,13 @@ class HomeController extends BaseController {
             echo $pam->respond();
             
             echo PHP_EOL . ' <hr />' . PHP_EOL;
-            
+            /*
             // fetch stuff
             $pam->listen('Pam, fetch normalize!');
             echo $pam->respond();
             
             echo PHP_EOL . ' <hr />' . PHP_EOL;
-
+                */
 	}
 
 }

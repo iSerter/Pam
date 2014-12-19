@@ -29,5 +29,8 @@
  * @author Ilyas Serter <ilyasserter@gmail.com>
  */
 interface FeatureInterface {
+
+    public function __construct($input);
+
     public function run();
 }

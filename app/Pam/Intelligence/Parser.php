@@ -33,6 +33,7 @@ class Parser {
     
     private $features = ['calculate' => '\Pam\Features\Calculator\Calculator', 
                         'fetch' => '\Pam\Features\Fetch\Fetch',
+                        'run' => '\Pam\Features\Run\Run'
                         ];
     
     private $redundantWords = ['pam','please','?','!',',','.'];

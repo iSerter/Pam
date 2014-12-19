@@ -31,7 +31,7 @@
  * @author Ilyas Serter <ilyasserter@gmail.com>
  */
 class Intelligence implements IntelligenceInterface {
-    
+
     private $parser;
     private $inputs = array();
     private $outputs = array();
@@ -39,15 +39,15 @@ class Intelligence implements IntelligenceInterface {
     function __construct() {
         $this->parser = new Parser;
     }
-    
+
     /**
      * listens for input 
      * 
-     * @param type $input
+     * @param string $input
      * @return boolean
      */
     public function listen($input = null) {
-        if(!is_null($input)) {
+        if(!is_null($input) && trim($input) != 'exit') {
             $this->inputs[] = $input;
             return true;
         }
